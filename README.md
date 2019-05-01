@@ -29,6 +29,9 @@ def number_shares_a(investment):
 ```python
 print(number_shares_a(300))
 # 50.42
+
+print(number_shares_a(1000))
+# 168.07
 ```
 
 2) Create a more-general function called `number_shares()` that takes in an `investment` amount and a `fund`. It should return the number of shares of that fund which that investment could buy today.

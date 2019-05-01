@@ -1,11 +1,11 @@
 ### Check the README for additional information ###
 
 # 1. Create a function called number_shares_a() that only accepts an investment amount and returns the number of shares of Fund A which that investment could buy today.
-
+# Then call the function with two different amounts to ensure that it works properly.
 
 
 # 2. Create a more-general function called number_shares() that takes in an investment amount and a fund. It should return the number of shares of that fund which that investment could buy today.
-
+# Then call the function with different amounts and different funds.
 
 
 # 3. Create a more flexible calculator method called history_shares() that takes in an investment amount, fund, and year and returns the number of shares that money could buy in that year.
