@@ -2,9 +2,9 @@
 
 **NOTE: On the next revision of this lab, it might be worth limiting the data that is shown during each challenge. Instead of one whole data table, there would be several smaller tables showing *only* relevant data.**
 
-Many financial advisors suggest that young people begin saving money early in life for their retirements. Saving comes in form of paying off debts; investing in stocks, bonds, and mutual funds; and putting money away in retirement accounts like IRAs and Roth IRAs. Often, investment advisors will provide clients with calculators to see how investments would have paid off if they had put money away. Although past performance doesn't imply future returns, we're going to look at several funds to see how much money a client could have made if they had invested at different times in the past. 
+Many financial advisors suggest that young people begin saving money early in life for their retirements. Saving comes in the form of paying off debts; investing in stocks, bonds, and mutual funds; and putting money away in retirement accounts like IRAs and Roth IRAs. Often, investment advisors will provide clients with calculators to see how investments would have paid off if they had put money away. Although past performance doesn't imply future returns, we're going to look at several funds to see how much money a client could have made if they had invested at different times in the past. 
 
-In general, it's possible to write a set of instructions (an algorithm) that takes in historical prices and calculates what the value of a past investment would be today. In this lab, you'll be writing python methods to calculate the current value of past investments.
+In general, it's possible to write a set of instructions (an algorithm) that takes in historical prices and calculates what the value of a past investment would be today. In this lab, you'll be writing Python methods to calculate the current value of past investments.
 
 Take a look at this chart that provides some historical data for a few financial funds in units of Cost Per Share (CPS):
 
@@ -17,7 +17,7 @@ Take a look at this chart that provides some historical data for a few financial
 
 ## Instructions
 
-1) Create a function called `number_shares_a()` that only accepts an `investment` amount and returns the number of shares of Fund A which that investment could buy today.
+1) Create a function called `number_shares_a()` that only accepts an `investment` amount and returns the number of shares of Fund A which that investment could buy **today.**
 
 ```python
 def number_shares_a(investment):
@@ -34,7 +34,7 @@ print(number_shares_a(1000))
 # 168.07
 ```
 
-2) Create a more-general function called `number_shares()` that takes in an `investment` amount and a `fund`. It should return the number of shares of that fund which that investment could buy today.
+2) Create a more-general function called `number_shares()` that takes in an `investment` amount and a `fund`. It should return the number of shares of that fund which that investment could buy **today**.
 
 ```python
 def number_shares(investment, fund):
@@ -66,26 +66,26 @@ print(history_shares(5000, "b", 1996))
 
 **Advanced Bonus Challenge:**
 
-4) What is the change of an investment over time? Create a method `calculate_profit()` that accepts an initial `investment` amount, the `fund`, and the initial investment `year`, and returns the current *profit* made on the initial investment. This is an open ended one - there are many ways to do this!
+4) What is the change of an investment over time? Create a method `calculate_profit_or_loss()` that accepts an initial `investment` amount, the `fund`, and the initial investment `year`, and returns the current *profit* made on the initial investment. This is an open ended one - there are many ways to do this!
 
 ```python
-def calculate_profit(investment, fund, year):
+def calculate_profit_or_loss(investment, fund, year):
 	# your code here
 ```
 
 > Hint: you might be able to use your `history_shares()` function to make this easier.
 
-**Example:** To calculate the profit of a $2,000 investment in Fund D in 1996, `calculate_profit(2000, "d", 1996)` should return **1000**.
+**Example:** To calculate the profit of a $2,000 investment in Fund D in 1996, `calculate_profit_or_loss(2000, "d", 1996)` should return **1000**.
 
 ```python
-print(calculate_profit(2000, "d", 1996))
+print(calculate_profit_or_loss(2000, "d", 1996))
 # 1000
 ```
 
 *Bonus:* Format the output of the function as USD currency, so instead of `1000`, the function should output **$1000.00**.
 
 ```python
-print(calculate_profit(2000, "d", 1996))
+print(calculate_profit_or_loss(2000, "d", 1996))
 # $1000.00
 ```
 
