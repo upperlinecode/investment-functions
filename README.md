@@ -6,14 +6,14 @@ Many financial advisors suggest that young people begin saving money early in li
 
 In general, it's possible to write a set of instructions (an algorithm) that takes in historical prices and calculates what the value of a past investment would be today. In this lab, you'll be writing Python methods to calculate the current value of past investments.
 
-Take a look at this chart that provides some historical data for a few financial funds in units of Cost Per Share (CPS):
+Take a look at this chart that provides some data for a few financial funds in units of Cost Per Share (CPS):
 
-| Fund | 1980 CPS (USD) | 1996 CPS (USD) | 2012 CPS (USD) | 2016 CPS (USD) | Current CPS (USD) |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| Fund A | $2.50 | $3.75 | $4.10 | $5.10 | $5.95 |
-| Fund B | $12.02 | $14.10 | $15.76 | $18.08 | $21.01 |
-| Fund C | $8.65 | $8.03 | $11.15 | $19.82 | $23.01 |
-| Fund D | $0.63 | $1.22 | $1.45 | $2.01 | $1.83 |
+| Fund | Current CPS (USD) |
+| :---: | :---: |
+| Fund A | $5.95 |
+| Fund B | $21.01 |
+| Fund C | $23.01 |
+| Fund D | $1.83 |
 
 ## Instructions
 
@@ -47,6 +47,15 @@ def number_shares(investment, fund):
 print(number_shares(1000, "c"))
 # 43.46
 ```
+
+For exercises 3-6, you'll need more information about each fund. Here's some historical data about each fund's performance.
+
+| Fund | 1980 CPS (USD) | 1996 CPS (USD) | 2012 CPS (USD) | 2016 CPS (USD) | Current CPS (USD) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| Fund A | $2.50 | $3.75 | $4.10 | $5.10 | $5.95 |
+| Fund B | $12.02 | $14.10 | $15.76 | $18.08 | $21.01 |
+| Fund C | $8.65 | $8.03 | $11.15 | $19.82 | $23.01 |
+| Fund D | $0.63 | $1.22 | $1.45 | $2.01 | $1.83 |
 
 3) Create a more flexible calculator method called `history_shares()` that takes in an `investment` amount, `fund`, and `year` and returns the number of shares that money could buy in that year.
 
