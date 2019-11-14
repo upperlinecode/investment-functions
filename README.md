@@ -1,7 +1,5 @@
 # Investment Calculator Lab
 
-**NOTE: On the next revision of this lab, it might be worth limiting the data that is shown during each challenge. Instead of one whole data table, there would be several smaller tables showing *only* relevant data.**
-
 Many financial advisors suggest that young people begin saving money early in life for their retirements. Saving comes in the form of paying off debts; investing in stocks, bonds, and mutual funds; and putting money away in retirement accounts like IRAs and Roth IRAs. Often, investment advisors will provide clients with calculators to see how investments would have paid off if they had put money away. Although past performance doesn't imply future returns, we're going to look at several funds to see how much money a client could have made if they had invested at different times in the past. 
 
 In general, it's possible to write a set of instructions (an algorithm) that takes in historical prices and calculates what the value of a past investment would be today. In this lab, you'll be writing Python methods to calculate the current value of past investments.
