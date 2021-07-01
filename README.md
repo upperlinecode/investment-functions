@@ -4,7 +4,7 @@
 
 Many financial advisors suggest that young people begin saving money early in life for their retirements. Saving comes in the form of paying off debts; investing in stocks, bonds, and mutual funds; and putting money away in retirement accounts like IRAs and Roth IRAs. Often, investment advisors will provide clients with calculators to see how investments would have paid off if they had put money away. Although past performance doesn't imply future returns, we're going to look at several funds to see how much money a client could have made if they had invested at different times in the past. 
 
-In general, it's possible to write a set of instructions (an algorithm) that takes in historical prices and calculates what the value of a past investment would be today. In this lab, you'll be writing Python methods to calculate the current value of past investments.
+In general, it's possible to write a set of instructions (an algorithm) that takes in historical prices and calculates what the value of a past investment would be today. In this lab, you'll be writing Python functions to calculate the current value of past investments.
 
 Take a look at this chart that provides some data for a few financial funds in units of Cost Per Share (CPS):
 
@@ -57,7 +57,7 @@ For exercises 3-6, you'll need more information about each fund. Here's some his
 | Fund C | $8.65 | $8.03 | $11.15 | $19.82 | $23.01 |
 | Fund D | $0.63 | $1.22 | $1.45 | $2.01 | $1.83 |
 
-3) Create a more flexible calculator method called `history_shares()` that takes in an `investment` amount, `fund`, and `year` and returns the number of shares that money could buy in that year.
+3) Create a more flexible calculator function called `history_shares()` that takes in an `investment` amount, `fund`, and `year` and returns the number of shares that money could buy in that year.
 
 ```python
 def history_shares(investment, fund, year):
@@ -75,7 +75,7 @@ print(history_shares(5000, "b", 1996))
 
 **Advanced Bonus Challenge:**
 
-4) What is the change of an investment over time? Create a method `calculate_profit_or_loss()` that accepts an initial `investment` amount, the `fund`, and the initial investment `year`, and returns the current *profit* made on the initial investment. This is an open ended one - there are many ways to do this!
+4) What is the change of an investment over time? Create a function `calculate_profit_or_loss()` that accepts an initial `investment` amount, the `fund`, and the initial investment `year`, and returns the current *profit* made on the initial investment. This is an open ended one - there are many ways to do this!
 
 ```python
 def calculate_profit_or_loss(investment, fund, year):
@@ -100,7 +100,7 @@ print(calculate_profit_or_loss(2000, "d", 1996))
 
 **Double Advanced Bonus Challenge:**
 
-5) Which investment is the best? Create a method `best_choice()` that accepts an `investment` amount and a `year`, and returns the name of the fund that would have made the most money for the investor. 
+5) Which investment is the best? Create a function `best_choice()` that accepts an `investment` amount and a `year`, and returns the name of the fund that would have made the most money for the investor. 
 
 ```python
 def best_choice(investment, year):
@@ -123,7 +123,7 @@ print(best_choice(1000, 2012))
 
 **Triple Advanced Bonus Challenge:**
 
-6) Consider the current profit difference between making an investment in a fund several years apart. Create a method `investment_diff()` that accepts an `investment` amount, a `fund`, and two `year` values and returns the current profit difference if the money had been made earlier vs. later.
+6) Consider the current profit difference between making an investment in a fund several years apart. Create a function `investment_diff()` that accepts an `investment` amount, a `fund`, and two `year` values and returns the current profit difference if the money had been made earlier vs. later.
 
 ```python
 def investment_diff(investment, fund, year1, year2):
