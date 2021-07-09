@@ -10,7 +10,7 @@ Take a look at this chart that provides some data for a few financial funds in u
 
 | Fund | Current CPS (USD) |
 | :---: | :---: |
-| Fund A | $5.95 |
+| Fund A | $6.00 |
 | Fund B | $21.01 |
 | Fund C | $23.01 |
 | Fund D | $1.83 |
@@ -24,14 +24,14 @@ def number_shares_a(investment):
 	# your code here
 ```
 
-**Example:** When I run `number_shares_a(300)` for a $300 investment, it should return **50.42** because $300 could buy 50.42 shares of Fund A.
+**Example:** When I run `number_shares_a(300)` for a $300 investment, it should return **60** because $300 could buy 50 shares of Fund A.
 
 ```python
 print(number_shares_a(300))
-# 50.42
+# 50
 
 print(number_shares_a(1000))
-# 168.07
+# 166.67
 ```
 
 2) Create a more-general function called `number_shares()` that takes in an `investment` amount and a `fund`. It should return the number of shares of that fund which that investment could buy **today**.
@@ -52,7 +52,7 @@ For exercises 3-6, you'll need more information about each fund. Here's some his
 
 | Fund | 1980 CPS (USD) | 1996 CPS (USD) | 2012 CPS (USD) | 2016 CPS (USD) | Current CPS (USD) |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| Fund A | $2.50 | $3.75 | $4.10 | $5.10 | $5.95 |
+| Fund A | $2.50 | $3.75 | $4.10 | $5.10 | $6.00 |
 | Fund B | $12.02 | $14.10 | $15.76 | $18.08 | $21.01 |
 | Fund C | $8.65 | $8.03 | $11.15 | $19.82 | $23.01 |
 | Fund D | $0.63 | $1.22 | $1.45 | $2.01 | $1.83 |
@@ -130,11 +130,11 @@ def investment_diff(investment, fund, year1, year2):
 	# your code here
 ```
 
-**Example:** To figure out how much more money an investor would have made investing $500 in Fund A in 1980 vs. 2012, `investment_diff(500, "a", 1980, 2012)` would return **464.39**.
+**Example:** To figure out how much more money an investor would have made investing $500 in Fund A in 1980 vs. 2012, `investment_diff(500, "a", 1980, 2012)` would return **481.11**.
 
 ```python
 print(investment_diff(500, "a", 1980, 2012))
-# 464.39
+# 481.11
 ```
 
 *Bonus:* How can you account for a sloppy investment advisor who puts the years in a different order than you expect?
